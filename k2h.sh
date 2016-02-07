@@ -7,3 +7,6 @@ cat $2 | iconv -f utf8 -t shift-jis -c | kakasi -JH -KH -Ea -s | iconv -f shift-
 
 #Bonus: It auto starts mpv without creating the srt for hiragana. My personal choice. 
 #mpv "$1" --sub-file="$2" --sub-file=<(cat $2 | iconv -f utf8 -t shift-jis -c | kakasi -JH -KH -Ea -s | iconv -f shift-jis -t utf8 -c) --sid=1 --secondary-sid=2
+
+#Bonus 2: Opening the original srt with firefox/iceweasel and use https://addons.mozilla.org/es/firefox/addon/rikaichan/ as a dictionary 
+#         Another useful resource is http://jisho.org/
